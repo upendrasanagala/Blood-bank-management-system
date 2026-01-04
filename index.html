@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blood Donation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="bg-red-600 text-white px-6 py-4 flex justify-between items-center">
+  <h1 class="font-bold text-2xl">Blood Donation</h1>
+  <div class="space-x-6">
+    <a href="#home" class="hover:underline">Home</a>
+    <a href="student-registration.html" class="hover:underline">Donate</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="bg-red-100 py-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+    <div>
+      <h2 class="text-4xl font-bold text-red-700 mb-4">
+        Donate Blood, Save Lives
+      </h2>
+      <p class="text-gray-700 mb-6">
+        A single blood donation can save up to three lives.
+        Register as a donor or find available blood near you.
+      </p>
+      <a href="student-registration.html"
+   class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700">
+  Become a Donor
+</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- SEARCH DONOR -->
+<section id="search" class="py-14 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-2xl font-bold text-center text-red-600 mb-6">
+      Find Blood Donors
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-4 mb-6">
+      <!-- Blood Group -->
+      <select id="searchBlood" class="border p-3 rounded">
+        <option value="">Select Blood Group</option>
+        <option>A+</option><option>A-</option>
+        <option>B+</option><option>B-</option>
+        <option>AB+</option><option>AB-</option>
+        <option>O+</option><option>O-</option>
+      </select>
+
+      <!-- Address -->
+      <input id="searchAddress"
+        placeholder="City / Area"
+        class="border p-3 rounded md:col-span-2">
+
+    </div>
+
+    <button onclick="searchDonor()"
+      class="w-full bg-red-600 text-white py-3 rounded hover:bg-red-700">
+      Search
+    </button>
+
+
+    <div id="resultsContainer" class="mt-6"></div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-red-600 text-white text-center py-4">
+  © 2026 Blood Donation 
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

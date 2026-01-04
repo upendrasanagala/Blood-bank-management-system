@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-red-50 min-h-screen">
+
+<!-- Navbar -->
+<nav class="bg-red-600 text-white px-6 py-4 flex justify-between">
+  <h1 class="font-bold">Blood Donation</h1>
+  <button
+    onclick="window.location.href='index.html'"
+    class="bg-white text-red-600 px-4 py-1 rounded hover:bg-gray-200 font-semibold">
+    ← Back
+  </button>
+</nav>
+
+<div class="flex justify-center mt-10">
+ <div class="bg-white p-8 rounded-xl shadow w-full max-w-lg">
+
+  <h2 class="text-2xl font-bold text-red-600 text-center mb-6">
+    Donor Registration
+  </h2>
+
+  <!-- FORM -->
+  <form id="donorForm" class="space-y-3">
+
+    <input id="studentId" placeholder="Student ID"
+      class="w-full border p-2 rounded">
+
+    <input id="name" placeholder="Full Name"
+      class="w-full border p-2 rounded">
+
+    <input id="email" type="email" placeholder="Email"
+      class="w-full border p-2 rounded">
+
+    <input id="age" type="number" placeholder="Age"
+      class="w-full border p-2 rounded">
+
+    <input id="phone" placeholder="Phone Number"
+      class="w-full border p-2 rounded">
+
+    <input id="address" placeholder="Address / Area"
+      class="w-full border p-2 rounded">
+
+    <select id="blood" class="w-full border p-2 rounded">
+      <option value="">Select Blood Group</option>
+      <option>A+</option><option>A-</option>
+      <option>B+</option><option>B-</option>
+      <option>AB+</option><option>AB-</option>
+      <option>O+</option><option>O-</option>
+    </select>
+
+    <button class="w-full bg-red-600 text-white py-2 rounded">
+      Register
+    </button>
+
+    <p id="msg" class="text-green-600 text-center font-semibold"></p>
+
+  </form>
+ </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
