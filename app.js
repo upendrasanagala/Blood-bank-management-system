@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (response.ok) {
-        msg.innerText = "Registration Successful ✔ Redirecting...";
+        msg.innerText = "Registration Successful ✔";
         msg.className = "text-green-600 text-center font-bold";
         
         setTimeout(() => {
