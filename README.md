@@ -18,8 +18,9 @@ A comprehensive web-based application designed to manage blood donations, donor 
 * **Version Control:** Git & GitHub
 
 ## 📸 Screenshots
+<img width="1143" height="460" alt="Screenshot " src="https://github.com/user-attachments/assets/db4a9a80-ecf6-4d82-9179-c48950ef71c9" />
 
-![Project Screenshot.
+
 
 
 ## ⚙️ How to Run
